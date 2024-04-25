@@ -12,6 +12,8 @@ export default function Catch() {
   return null;
 }
 
+// ADDING A USELESS COMMENT TO DEMONSTRATE CHANGES MADE TO LOCAL FORK
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const idToPathSegmentsMap = getIdToPathSegmentsMap(await getCurriculum());
   const uuid = params?.id?.slice(-1)[0];
